@@ -1,0 +1,5 @@
+netqmai-setup.sh
+  - Create groups and users for netqmail
+  - Download netqmail-1.06
+  - Make and install
+  - Register to daemon tools
