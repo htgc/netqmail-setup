@@ -3,3 +3,8 @@ netqmai-setup.sh
   - Download netqmail-1.06
   - Make and install
   - Register to daemon tools
+
+qmail-send-setup.sh
+  Shell script for setup qmail-send 
+  execute netqmail-setup.sh if needed.
+

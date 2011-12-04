@@ -3,7 +3,7 @@
 # check for /var/qmail is exist
 # if not, execute ./netqmail-setup.sh
 if ! [ -d /var/qmail ]; then
-    exec ./netqmail-setup.sh
+    ./netqmail-setup.sh
 fi
 
 if [ -d /var/qmail-send ]; then
@@ -25,8 +25,8 @@ mkdir -p /var/qmail-send/log/main
 cat >/var/qmail-send/log/run <<'__EOD__'
 #!/bin/sh
 
-exec env - PTAH=$PATH:/var/qmail/bin \
-setuidgid qmaill\
+exec env - PATH=$PATH:/var/qmail/bin:/usr/local/bin \
+setuidgid qmaill \
 multilog t ./main -'*' +'* status: *' =status
 __EOD__
 chmod +x /var/qmail-send/log/run
