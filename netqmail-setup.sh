@@ -13,7 +13,7 @@ cd package
 ! [ `getent passwd qmaild` ] && useradd -g nofiles -d /var/qmail -s /sbin/nologin qmaild
 ! [ `getent passwd qmaill` ] && useradd -g nofiles -d /var/qmail -s /sbin/nologin qmaill
 ! [ `getent passwd qmailp` ] && useradd -g nofiles -d /var/qmail -s /sbin/nologin qmailp
-! [ `getent passwd alias` ] && useradd -g nofiles -d /var/qmail/alias -s /sbin/noligin alias
+! [ `getent passwd alias` ] && useradd -g nofiles -d /var/qmail/alias -s /sbin/nologin alias
 ! [ `getent passwd qmailq` ] && useradd -g qmail -d /var/qmail -s /sbin/nologin qmailq
 ! [ `getent passwd qmailr` ] && useradd -g qmail -d /var/qmail -s /sbin/nologin qmailr
 ! [ `getent passwd qmails` ] && useradd -g qmail -d /var/qmail -s /sbin/nologin qmails
